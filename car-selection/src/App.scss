@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #EEF2F7;
+}
+
+.button {
+  &__neutral {
+    font-size: 1.0em;
+    color: #64646D;
+    border: 1px solid #64646D;
+    border-radius: 10px;
+    padding: 10px 35px;
+
+    &:hover {
+      background: #E5E5EA;
+      color: #067BFF;
+      cursor: pointer;
+    }
+  }
+}
+
+select {
+  font-size: 1.0em;
+  margin: 10px auto;
+  min-width: 200px;
+  border: 1px solid #64646D;
+}
+
+.vehicle {
+  border-radius: 5px;
+  width: 85%;
+  padding: 15px;
+  background: #ffffff;
+  margin: 10px auto;
+  text-align: left;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+  &__name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #067BFF;
+  }
+
+  &__data-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    
+    &__label {
+      font-weight: bold;
+    }
+  
+    &__value {}
+  }
+
+}
